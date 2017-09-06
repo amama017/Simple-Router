@@ -1,0 +1,22 @@
+****************************************
+Report : area
+Design : Decoder4x16_1
+Version: B-2008.09
+Date   : Tue May 15 22:38:08 2012
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ayman/Desktop/DC_G7/models/saed90nm_max_pg.db)
+
+Number of ports:               28
+Number of nets:                50
+Number of cells:               38
+Number of references:           6
+
+Combinational area:        527.853003
+Noncombinational area:       0.000000
+Net Interconnect area:       8.180000  
+
+Total cell area:           527.853003
+Total area:                536.033003

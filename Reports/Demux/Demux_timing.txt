@@ -1,0 +1,32 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DeMux_1
+Version: B-2008.09
+Date   : Mon May 14 22:25:26 2012
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: d_out2_reg[7]
+              (positive level-sensitive latch)
+  Endpoint: d_out2[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DeMux_1            8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  d_out2_reg[7]/CLK (LATCHX1)              0.00       0.00 r
+  d_out2_reg[7]/Q (LATCHX1)                0.57       0.57 r
+  d_out2[7] (out)                          0.00       0.57 r
+  data arrival time                                   0.57
+  -----------------------------------------------------------
+  (Path is unconstrained)
+

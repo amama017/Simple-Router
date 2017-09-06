@@ -1,0 +1,95 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIFO_1
+Version: B-2008.09
+Date   : Tue May 15 18:31:25 2012
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: F/read_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by clock1')
+  Endpoint: R/D_out_reg[0]
+            (rising edge-triggered flip-flop clocked by clock1)
+  Path Group: clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO_1             8000                  saed90nm_max
+  Block_RAM          8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock1' (rise edge)                5.00       5.00
+  clock network delay (ideal)              1.50       6.50
+  F/read_ptr_reg[0]/CLK (DFFASX2)          0.00       6.50 r
+  F/read_ptr_reg[0]/Q (DFFASX2)            1.41       7.91 r
+  F/rd_ptr[0] (fifocon_2)                  0.00       7.91 r
+  R/ADDRB[0] (Block_RAM)                   0.00       7.91 r
+  R/U11/QN (INVX8)                         0.14       8.05 f
+  R/U40/QN (NOR2X0)                        0.27       8.32 r
+  R/U71/QN (NAND2X1)                       0.29       8.62 f
+  R/U70/QN (INVX4)                         0.35       8.97 r
+  R/U179/Q (AO22X1)                        0.42       9.39 r
+  R/U178/QN (AOI221X1)                     0.31       9.70 f
+  R/U177/QN (OAI222X1)                     0.97      10.67 r
+  R/U105/Q (AO221X1)                       0.30      10.96 r
+  R/D_out_reg[0]/D (DFFX1)                 0.00      10.96 r
+  data arrival time                                  10.96
+
+  clock clock1 (rise edge)                10.00      10.00
+  clock network delay (ideal)              1.50      11.50
+  clock uncertainty                       -0.30      11.20
+  R/D_out_reg[0]/CLK (DFFX1)               0.00      11.20 r
+  library setup time                      -0.19      11.01
+  data required time                                 11.01
+  -----------------------------------------------------------
+  data required time                                 11.01
+  data arrival time                                 -10.96
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: reset (input port clocked by clock2)
+  Endpoint: F/rst_empt_reg
+            (rising edge-triggered flip-flop clocked by clock2')
+  Path Group: clock2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO_1             8000                  saed90nm_max
+  fifocon_2          8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock2 (rise edge)                 0.00       0.00
+  clock network delay (ideal)              1.50       1.50
+  input external delay                     1.00       2.50 r
+  reset (in)                               0.01       2.51 r
+  F/reset (fifocon_2)                      0.00       2.51 r
+  F/U18/QN (NOR2X1)                        0.30       2.81 f
+  F/U50/QN (INVX0)                         0.28       3.09 r
+  F/U19/QN (NAND2X0)                       0.75       3.84 f
+  F/U49/QN (INVX0)                         0.77       4.62 r
+  F/U12/Q (AND2X1)                         0.52       5.14 r
+  F/U29/Q (AO21X1)                         0.26       5.40 r
+  F/rst_empt_reg/D (DFFARX1)               0.00       5.40 r
+  data arrival time                                   5.40
+
+  clock clock2' (rise edge)                5.00       5.00
+  clock network delay (ideal)              1.50       6.50
+  clock uncertainty                       -0.30       6.20
+  F/rst_empt_reg/CLK (DFFARX1)             0.00       6.20 r
+  library setup time                      -0.32       5.88
+  data required time                                  5.88
+  -----------------------------------------------------------
+  data required time                                  5.88
+  data arrival time                                  -5.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.48

@@ -1,0 +1,54 @@
+****************************************
+Report : qor
+Design : DeMux_1
+Version: B-2008.09
+Date   : Mon May 14 22:26:52 2012
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.57
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:     Undef
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                 38
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:       44.235999
+  Noncombinational Area:   707.776001
+  Net Area:                 20.292697
+  -----------------------------------
+  Cell Area:               752.012000
+  Design Area:             772.304697
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            49
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ayman-Satellite-A300
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.00
+  Logic Optimization:            0.05
+  Mapping Optimization:          0.03
+  -----------------------------------
+  Overall Compile Time:          0.95

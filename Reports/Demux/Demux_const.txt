@@ -1,0 +1,14 @@
+****************************************
+Report : constraint
+Design : DeMux_1
+Version: B-2008.09
+Date   : Mon May 14 22:26:09 2012
+****************************************
+
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_fanout                                       0.00 (MET)
+    max_capacitance                                  0.00 (MET)

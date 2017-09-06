@@ -1,0 +1,14 @@
+****************************************
+Report : constraint
+Design : Decoder4x16_1
+Version: B-2008.09
+Date   : Tue May 15 22:39:50 2012
+****************************************
+
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_fanout                                       0.00 (MET)
+    max_capacitance                                  0.00 (MET)

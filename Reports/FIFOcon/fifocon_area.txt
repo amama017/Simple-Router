@@ -1,0 +1,22 @@
+****************************************
+Report : area
+Design : fifocon_1
+Version: B-2008.09
+Date   : Tue May 15 18:24:10 2012
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ayman/Desktop/DC_G7/models/saed90nm_max_pg.db)
+
+Number of ports:               17
+Number of nets:                79
+Number of cells:               65
+Number of references:          19
+
+Combinational area:        476.944004
+Noncombinational area:     444.208000
+Net Interconnect area:      32.258013  
+
+Total cell area:           921.152004
+Total area:                953.410017

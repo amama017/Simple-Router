@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Register_8bit_n8
+Version: B-2008.09
+Date   : Mon May 14 22:54:03 2012
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: Clock_En (input port clocked by clock)
+  Endpoint: Data_out_reg[0]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Register_8bit_n8   8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 f
+  Clock_En (in)                            0.00       1.00 f
+  U30/QN (INVX2)                           0.19       1.19 r
+  U22/Q (AO22X1)                           0.36       1.55 r
+  Data_out_reg[0]/D (DFFARX1)              0.00       1.55 r
+  data arrival time                                   1.55
+
+  clock clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  Data_out_reg[0]/CLK (DFFARX1)            0.00      10.00 r
+  library setup time                      -0.45       9.55
+  data required time                                  9.55
+  -----------------------------------------------------------
+  data required time                                  9.55
+  data arrival time                                  -1.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.99

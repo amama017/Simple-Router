@@ -1,0 +1,65 @@
+****************************************
+Report : qor
+Design : Block_RAM_1
+Version: B-2008.09
+Date   : Mon May 14 23:10:43 2012
+****************************************
+
+
+  Timing Path Group 'clock1'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          2.29
+  Critical Path Slack:           6.22
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clock2'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          3.25
+  Critical Path Slack:           5.33
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                423
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     3037.722018
+  Noncombinational Area:  3384.087921
+  Net Area:                355.905317
+  -----------------------------------
+  Cell Area:              6421.809939
+  Design Area:            6777.715256
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           571
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ayman-Satellite-A300
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.21
+  Logic Optimization:            2.98
+  Mapping Optimization:          0.56
+  -----------------------------------
+  Overall Compile Time:          4.69

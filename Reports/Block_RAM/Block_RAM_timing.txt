@@ -1,0 +1,87 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Block_RAM_1
+Version: B-2008.09
+Date   : Mon May 14 23:09:00 2012
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: ADDRA[1] (input port clocked by clock2)
+  Endpoint: ram_reg[7][0]
+            (rising edge-triggered flip-flop clocked by clock1)
+  Path Group: clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Block_RAM_1        8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock2 (rise edge)                 0.00       0.00
+  clock network delay (ideal)              1.50       1.50
+  input external delay                     1.00       2.50 r
+  ADDRA[1] (in)                            0.00       2.50 r
+  U280/QN (INVX0)                          0.14       2.64 f
+  U201/QN (NOR2X0)                         0.67       3.31 r
+  U451/QN (NAND2X2)                        0.67       3.98 f
+  U450/QN (INVX2)                          0.36       4.34 r
+  U52/Q (AO22X1)                           0.46       4.79 r
+  ram_reg[7][0]/D (DFFX1)                  0.00       4.79 r
+  data arrival time                                   4.79
+
+  clock clock1 (rise edge)                10.00      10.00
+  clock network delay (ideal)              1.50      11.50
+  clock uncertainty                       -0.30      11.20
+  ram_reg[7][0]/CLK (DFFX1)                0.00      11.20 r
+  library setup time                      -0.19      11.01
+  data required time                                 11.01
+  -----------------------------------------------------------
+  data required time                                 11.01
+  data arrival time                                  -4.79
+  -----------------------------------------------------------
+  slack (MET)                                         6.22
+
+
+  Startpoint: ADDRB[2] (input port clocked by clock2)
+  Endpoint: D_out_reg[0]
+            (rising edge-triggered flip-flop clocked by clock2)
+  Path Group: clock2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Block_RAM_1        8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock2 (rise edge)                 0.00       0.00
+  clock network delay (ideal)              1.50       1.50
+  input external delay                     1.00       2.50 r
+  ADDRB[2] (in)                            0.00       2.50 r
+  U406/QN (INVX0)                          0.13       2.63 f
+  U461/Q (AND2X1)                          0.37       3.01 f
+  U466/QN (INVX2)                          0.60       3.61 r
+  U388/Q (OA22X1)                          0.59       4.20 r
+  U387/Q (OA221X1)                         0.46       4.66 r
+  U382/QN (OAI22X1)                        0.62       5.28 f
+  U381/Q (AO221X1)                         0.47       5.75 f
+  D_out_reg[0]/D (DFFX1)                   0.00       5.75 f
+  data arrival time                                   5.75
+
+  clock clock2 (rise edge)                10.00      10.00
+  clock network delay (ideal)              1.50      11.50
+  clock uncertainty                       -0.30      11.20
+  D_out_reg[0]/CLK (DFFX1)                 0.00      11.20 r
+  library setup time                      -0.12      11.08
+  data required time                                 11.08
+  -----------------------------------------------------------
+  data required time                                 11.08
+  data arrival time                                  -5.75
+  -----------------------------------------------------------
+  slack (MET)                                         5.33

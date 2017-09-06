@@ -1,0 +1,65 @@
+****************************************
+Report : qor
+Design : Router_1
+Version: B-2008.09
+Date   : Tue May 15 23:01:18 2012
+****************************************
+
+
+  Timing Path Group 'clock1'
+  -----------------------------------
+  Levels of Logic:              12.00
+  Critical Path Length:          4.51
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clock2'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          4.27
+  Critical Path Slack:           0.12
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         78
+  Hierarchical Port Count:       1676
+  Leaf Cell Count:               8653
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    64061.231446
+  Noncombinational Area: 66731.592747
+  Net Area:               9760.926291
+  -----------------------------------
+  Cell Area:            130792.824193
+  Design Area:          140553.750483
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          9811
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ayman-Satellite-A300
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.31
+  Logic Optimization:            7.03
+  Mapping Optimization:         22.02
+  -----------------------------------
+  Overall Compile Time:         32.91

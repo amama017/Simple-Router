@@ -1,0 +1,30 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Buffer1_1
+Version: B-2008.09
+Date   : Mon May 14 22:20:31 2012
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: dout_reg (rising edge-triggered flip-flop)
+  Endpoint: dout (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Buffer1_1          ForQA                 saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  dout_reg/CLK (DFFX2)                     0.00       0.00 r
+  dout_reg/Q (DFFX2)                       1.32       1.32 r
+  dout (out)                               0.00       1.33 r
+  data arrival time                                   1.33
+  -----------------------------------------------------------
+  (Path is unconstrained)

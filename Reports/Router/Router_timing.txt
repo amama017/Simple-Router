@@ -1,0 +1,107 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Router_1
+Version: B-2008.09
+Date   : Tue May 15 23:00:18 2012
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: fifo41/F/read_valid_reg
+              (rising edge-triggered flip-flop clocked by clock1')
+  Endpoint: fifo41/R/D_out_reg[1]
+            (rising edge-triggered flip-flop clocked by clock1)
+  Path Group: clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO_4             8000                  saed90nm_max
+  Block_RAM_4        8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock1' (rise edge)                               5.00       5.00
+  clock network delay (ideal)                             1.50       6.50
+  fifo41/F/read_valid_reg/CLK (DFFARX1)                   0.00       6.50 r
+  fifo41/F/read_valid_reg/Q (DFFARX1)                     1.07       7.57 r
+  fifo41/F/read_valid (fifocon_1_4)                       0.00       7.57 r
+  fifo41/R/REA (Block_RAM_4)                              0.00       7.57 r
+  fifo41/R/U16/QN (INVX8)                                 0.18       7.76 f
+  fifo41/R/U28/QN (NOR2X4)                                0.25       8.01 r
+  fifo41/R/U27/QN (INVX4)                                 0.11       8.12 f
+  fifo41/R/U29/QN (INVX2)                                 0.14       8.27 r
+  fifo41/R/U51/Q (AND2X2)                                 0.36       8.63 r
+  fifo41/R/U136/QN (INVX8)                                0.10       8.72 f
+  fifo41/R/U8/QN (INVX16)                                 0.06       8.78 r
+  fifo41/R/U9/QN (INVX16)                                 0.06       8.84 f
+  fifo41/R/U31/Q (OA22X1)                                 0.37       9.20 f
+  fifo41/R/U30/Q (OA221X1)                                0.47       9.67 f
+  fifo41/R/U21/QN (OAI222X1)                              1.04      10.71 r
+  fifo41/R/U20/Q (AO221X1)                                0.30      11.01 r
+  fifo41/R/D_out_reg[1]/D (DFFX1)                         0.00      11.01 r
+  data arrival time                                                 11.01
+
+  clock clock1 (rise edge)                               10.00      10.00
+  clock network delay (ideal)                             1.50      11.50
+  clock uncertainty                                      -0.30      11.20
+  fifo41/R/D_out_reg[1]/CLK (DFFX1)                       0.00      11.20 r
+  library setup time                                     -0.19      11.01
+  data required time                                                11.01
+  --------------------------------------------------------------------------
+  data required time                                                11.01
+  data arrival time                                                -11.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: i4/Data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clock2)
+  Endpoint: fifo34/F/write_ptr_reg[3]
+            (rising edge-triggered flip-flop clocked by clock2')
+  Path Group: clock2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Router_1           140000                saed90nm_max
+  Decoder4x16_2_0    ForQA                 saed90nm_max
+  fifocon_1_5        8000                  saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock2 (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             1.50       1.50
+  i4/Data_out_reg[0]/CLK (DFFARX1)                        0.00 #     1.50 r
+  i4/Data_out_reg[0]/Q (DFFARX1)                          1.43       2.93 f
+  i4/Data_out[0] (Register_8bit_n8_5)                     0.00       2.93 f
+  Dec1/Sv3[0] (Decoder4x16_2_0)                           0.00       2.93 f
+  Dec1/U3/QN (INVX8)                                      0.56       3.48 r
+  Dec1/U24/Q (AND3X1)                                     0.58       4.07 r
+  Dec1/Code[14] (Decoder4x16_2_0)                         0.00       4.07 r
+  fifo34/w_req (FIFO_5)                                   0.00       4.07 r
+  fifo34/F/w_req (fifocon_1_5)                            0.00       4.07 r
+  fifo34/F/U75/Q (AND2X1)                                 0.42       4.49 r
+  fifo34/F/U91/Q (AND3X1)                                 0.51       4.99 r
+  fifo34/F/U95/QN (NAND2X0)                               0.25       5.24 f
+  fifo34/F/U94/Q (XNOR2X1)                                0.53       5.77 r
+  fifo34/F/write_ptr_reg[3]/D (DFFASX1)                   0.00       5.77 r
+  data arrival time                                                  5.77
+
+  clock clock2' (rise edge)                               5.00       5.00
+  clock network delay (ideal)                             1.50       6.50
+  clock uncertainty                                      -0.30       6.20
+  fifo34/F/write_ptr_reg[3]/CLK (DFFASX1)                 0.00       6.20 r
+  library setup time                                     -0.31       5.89
+  data required time                                                 5.89
+  --------------------------------------------------------------------------
+  data required time                                                 5.89
+  data arrival time                                                 -5.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12

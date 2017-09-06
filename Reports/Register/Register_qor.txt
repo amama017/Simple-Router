@@ -1,0 +1,54 @@
+****************************************
+Report : qor
+Design : Register_8bit_n8
+Version: B-2008.09
+Date   : Mon May 14 22:54:54 2012
+****************************************
+
+
+  Timing Path Group 'clock'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.55
+  Critical Path Slack:           7.99
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                 18
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      108.750000
+  Noncombinational Area:   258.048004
+  Net Area:                 12.819217
+  -----------------------------------
+  Cell Area:               366.798004
+  Design Area:             379.617221
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            29
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ayman-Satellite-A300
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.00
+  Logic Optimization:            0.06
+  Mapping Optimization:          0.04
+  -----------------------------------
+  Overall Compile Time:          0.95

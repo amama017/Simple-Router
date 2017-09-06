@@ -1,0 +1,14 @@
+****************************************
+Report : constraint
+Design : Buffer1_1
+Version: B-2008.09
+Date   : Mon May 14 22:22:08 2012
+****************************************
+
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_fanout                                       0.00 (MET)
+    max_capacitance                                  0.00 (MET)

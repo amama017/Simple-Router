@@ -1,0 +1,22 @@
+****************************************
+Report : area
+Design : Router_1
+Version: B-2008.09
+Date   : Tue May 15 22:59:38 2012
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/ayman/Desktop/DC_G7/models/saed90nm_max_pg.db)
+
+Number of ports:               75
+Number of nets:               460
+Number of cells:               59
+Number of references:          50
+
+Combinational area:       64061.231446
+Noncombinational area:    66731.592747
+Net Interconnect area:    9760.926291  
+
+Total cell area:          130792.824193
+Total area:               140553.750483

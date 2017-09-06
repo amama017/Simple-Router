@@ -1,0 +1,91 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fifocon_1
+Version: B-2008.09
+Date   : Tue May 15 18:24:47 2012
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: read_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by clock1)
+  Endpoint: rst_full_reg
+            (rising edge-triggered flip-flop clocked by clock1)
+  Path Group: clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fifocon_1          8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock1 (rise edge)                 0.00       0.00
+  clock network delay (ideal)              1.50       1.50
+  read_ptr_reg[0]/CLK (DFFASX1)            0.00       1.50 r
+  read_ptr_reg[0]/QN (DFFASX1)             1.01       2.51 f
+  U31/QN (NOR2X0)                          0.47       2.98 r
+  U28/QN (NAND2X0)                         0.37       3.35 f
+  U27/Q (XNOR2X1)                          0.57       3.91 r
+  U22/Q (XNOR2X1)                          0.52       4.43 r
+  U21/QN (NAND3X0)                         0.29       4.73 f
+  U18/QN (NOR3X0)                          0.25       4.98 r
+  U17/QN (NOR2X0)                          0.23       5.20 f
+  rst_full_reg/D (DFFARX1)                 0.00       5.20 f
+  data arrival time                                   5.20
+
+  clock clock1 (rise edge)                10.00      10.00
+  clock network delay (ideal)              1.50      11.50
+  clock uncertainty                       -0.30      11.20
+  rst_full_reg/CLK (DFFARX1)               0.00      11.20 r
+  library setup time                      -0.28      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -5.20
+  -----------------------------------------------------------
+  slack (MET)                                         5.72
+
+
+  Startpoint: reset (input port clocked by clock2)
+  Endpoint: write_ptr_reg[3]
+            (rising edge-triggered flip-flop clocked by clock2)
+  Path Group: clock2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fifocon_1          8000                  saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock2 (rise edge)                 0.00       0.00
+  clock network delay (ideal)              1.50       1.50
+  input external delay                     1.00       2.50 f
+  reset (in)                               0.01       2.51 f
+  U62/QN (INVX2)                           0.60       3.11 r
+  U59/Q (OA21X1)                           0.76       3.87 r
+  U58/QN (INVX0)                           0.26       4.13 f
+  U57/QN (NAND2X0)                         0.53       4.67 r
+  U10/QN (NOR2X0)                          0.45       5.12 f
+  U8/Q (AND2X1)                            0.33       5.45 f
+  U6/QN (NAND2X0)                          0.20       5.66 r
+  U5/Q (XOR2X1)                            0.50       6.15 r
+  write_ptr_reg[3]/D (DFFASX1)             0.00       6.15 r
+  data arrival time                                   6.15
+
+  clock clock2 (rise edge)                10.00      10.00
+  clock network delay (ideal)              1.50      11.50
+  clock uncertainty                       -0.30      11.20
+  write_ptr_reg[3]/CLK (DFFASX1)           0.00      11.20 r
+  library setup time                      -0.31      10.89
+  data required time                                 10.89
+  -----------------------------------------------------------
+  data required time                                 10.89
+  data arrival time                                  -6.15
+  -----------------------------------------------------------
+  slack (MET)                                         4.74

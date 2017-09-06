@@ -1,0 +1,65 @@
+****************************************
+Report : qor
+Design : fifocon_1
+Version: B-2008.09
+Date   : Tue May 15 18:26:43 2012
+****************************************
+
+
+  Timing Path Group 'clock1'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          3.70
+  Critical Path Slack:           5.72
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clock2'
+  -----------------------------------
+  Levels of Logic:               8.00
+  Critical Path Length:          3.65
+  Critical Path Slack:           4.74
+  Critical Path Clk Period:     10.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                 65
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      476.944004
+  Noncombinational Area:   444.208000
+  Net Area:                 32.258013
+  -----------------------------------
+  Cell Area:               921.152004
+  Design Area:             953.410017
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            79
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ayman-Satellite-A300
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.08
+  Logic Optimization:            0.32
+  Mapping Optimization:          0.05
+  -----------------------------------
+  Overall Compile Time:          1.92
